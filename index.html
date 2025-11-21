@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naweb - Travel Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- POPUP WELCOME -->
+    <div id="welcomePopup" class="popup-container">
+        <div class="popup-box">
+            <h2>Selamat Datang!</h2>
+            <p>Bisakah kamu perkenalkan dirimu?</p>
+            <input type="text" id="usernameInput" placeholder="Masukkan nama..." autofocus>
+            <button id="enterBtn">Masuk</button>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header>
+        <!-- Logo gambar -->
+        <div class="logo-circle" id="logoHome">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-target="profile">Our Profile</a></li>
+                <li><a href="#" class="nav-link" data-target="portfolio">Portfolio</a></li>
+                <li><a href="#" class="nav-link" data-target="contact">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="page-section active">
+        <h1 id="welcomeTitle">Hi Ges, Welcome To My Website</h1>
+        <p class="subtext">Ini website pertama ku namanya <b>naweb</b>, selamat eksplor!</p>
+
+        <!-- Banner gambar -->
+        <div class="banner">
+            <img src="img/banner.jpg" alt="Banner Website">
+        </div>
+
+        <p class="italic-text">
+            aku adalah seorang yang suka belajar meskipun tidak sehebat yang lain,  
+            aku hanya bisa mencoba dan berusaha.
+        </p>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="page-section hidden">
+        <h1 class="section-title">Profil Saya</h1>
+
+        <div class="profile-container">
+
+            <!-- Foto profil -->
+            <div class="profile-photo">
+                <img src="img/profile.jpg" alt="Foto Profil">
+            </div>
+
+            <div class="profile-info">
+                <h2>Iwan Koswara</h2>
+                <p><b>Hobi:</b> Musik, Learning, Reading, Tech</p>
+                <p><b>Sport:</b> Run</p>
+                <p><b>Email:</b> iwan.sanggitaris@gmail.com</p>
+
+                <!-- Ikon sosmed -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ieunaw/" target="_blank">
+                        <img src="img/ig.png" class="icon" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.tiktok.com/@iwankoswara12uiy" target="_blank">
+                        <img src="img/tiktok.png" class="icon" alt="TikTok">
+                    </a>
+
+                    <a href="https://web.facebook.com/iwan.koswara.750" target="_blank">
+                        <img src="img/fb.png" class="icon" alt="Facebook">
+                    </a>
+
+                    <a href="https://www.threads.com/@ieunaw" target="_blank">
+                        <img src="img/threads.png" class="icon" alt="Threads">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="page-section hidden">
+        <h1 class="section-title">Portfolio</h1>
+
+        <div class="portfolio-grid">
+
+            <!--  Thumbnail karya -->
+            <a href="portfolio/karya1.html" class="thumb">
+                <img src="img/thumb1.jpg" alt="Thumbnail 1">
+            </a>
+
+            <a href="portfolio/karya2.html" class="thumb">
+                <img src="img/thumb2.jpg" alt="Thumbnail 2">
+            </a>
+
+            <a href="portfolio/karya3.html" class="thumb">
+                <img src="img/thumb3.jpg" alt="Thumbnail 3">
+            </a>
+
+        </div>
+    </section>
+
+    <!-- MESSAGE US -->
+    <section id="contact" class="page-section hidden">
+        <h1 class="section-title">Message Us</h1>
+
+        <div class="contact-wrapper">
+
+            <form id="contactForm">
+
+                <label>Nama</label>
+                <input type="text" id="formName">
+
+                <label>Email</label>
+                <input type="email" id="formEmail" placeholder="contoh@mail.com">
+
+                <label>Tanggal Lahir</label>
+                <input type="date" id="formBirth">
+
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                </div>
+
+                <label>Pesan</label>
+                <textarea id="formMessage"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="resultBox" class="result-box">
+                <h3>Hasil Pengisian</h3>
+                <p class="hasil"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
